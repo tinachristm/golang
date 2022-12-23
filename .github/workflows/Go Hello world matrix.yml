@@ -1,6 +1,6 @@
 name: go matrix
 
-on: [push]
+on: push
   
       
 jobs:
