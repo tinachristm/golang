@@ -1,0 +1,13 @@
+name: mydocker
+on: 
+  push:
+jobs:
+  docker1:
+   
+   strategy:
+      matrix:
+        version: [10, 12, 14]
+        os: [ubuntu-latest]
+   runs-on: ${{ matrix.os }}
+   steps:
+    - uses: actions/checkout@v2
