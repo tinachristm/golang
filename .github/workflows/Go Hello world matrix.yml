@@ -12,8 +12,8 @@ jobs:
   Hello_World:
    strategy:
       matrix:
-        version: [1.13, 1.14, 1.15,]
         os: [ubuntu-latest, macos-latest]
+        version: [1.13, 1.14, 1.15,]
   
   
    runs-on: ${{ matrix.os }}
@@ -24,7 +24,7 @@ jobs:
     - name: Set up go
       uses: actions/setup-go@v3
       with:
-       go-version: ${{ matrix.goversion }}
+       go-version: ${{ matrix.version }}
          
     - name: Build
       run:  go build -v ./...
