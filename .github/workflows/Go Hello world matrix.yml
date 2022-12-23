@@ -1,7 +1,6 @@
 name: go matrix
 
 on: [push]
-  workflow_dispatch:
   
       
 jobs:
