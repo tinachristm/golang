@@ -2,6 +2,8 @@ name: go matrix
 
 on: 
   push:
+    branches:
+      - main
     
   workflow_dispatch:
   
