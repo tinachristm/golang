@@ -26,9 +26,10 @@ jobs:
       with:
         go-version: ${{ matrix.version }}
     - uses: actions/checkout@v3
+    - run: go run main.go
          
-    - name: Build
-      run:  go build -v ./...
+#     - name: Build
+#       run:  go build -v ./...
 
-    - name: Test
-      run:  go test -v ./...
+#     - name: Test
+#       run:  go test -v ./...
