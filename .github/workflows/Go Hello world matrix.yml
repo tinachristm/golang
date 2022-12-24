@@ -25,6 +25,7 @@ jobs:
       uses: actions/setup-go@v3
       with:
         go-version: ${{ matrix.version }}
+    - uses: actions/checkout@v3
          
     - name: Build
       run:  go build -v ./...
